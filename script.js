@@ -119,3 +119,24 @@ while (num >= 0) {
 
 // 10. Напишите программу, которая ищет заданное число в произвольном массиве длиной 8 и выводит его индекс. Если число не найдено, выведите сообщение об этом.
 
+
+
+
+
+
+let array = [10, 20, 30, 40, 50, 60, 70, 80];
+let numberToFind = 50;
+let index = -1;
+
+for (let i = 0; i < array.length; i++) {
+    if (array[i] === numberToFind) {
+        index = i;
+        break;
+    }
+}
+
+if (index !== -1) {
+    console.log("Число в индексе: " + index);
+} else {
+    console.log("Число не найдено.");
+}
